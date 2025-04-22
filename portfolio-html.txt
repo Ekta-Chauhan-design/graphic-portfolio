@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Graphic Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header data-aos="fade-down">
+    <h1>Your Name</h1>
+    <p>Graphic Designer | Visual Storyteller | Creative Thinker</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I’m a passionate graphic designer who creates bold, clean, and impactful designs. From branding to print media, I bring stories to life through visuals.</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" data-aos="fade-up">
+    <h2>My Portfolio</h2>
+
+    <h3>Logo Designs</h3>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300" alt="Logo Design 1" />
+      <img src="https://via.placeholder.com/300" alt="Logo Design 2" />
+    </div>
+
+    <h3>Stationery Designs</h3>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300" alt="Stationery 1" />
+    </div>
+
+    <h3>Brand Identity Projects</h3>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300" alt="Brand Identity" />
+    </div>
+
+    <h3>Flyer / Poster Designs</h3>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300" alt="Flyer 1" />
+    </div>
+
+    <h3>Brochure Designs</h3>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300" alt="Brochure" />
+    </div>
+
+    <h3>Banner Designs</h3>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300" alt="Banner" />
+    </div>
+
+    <h3>Social Media Posters</h3>
+    <div class="grid">
+      <img src="https://via.placeholder.com/300" alt="Social Media Poster" />
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" data-aos="fade-up">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <p>"An amazing designer! Delivered high-quality work on time!"</p>
+      <strong>– Client Name</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Creative, professional, and easy to work with. Highly recommend!"</p>
+      <strong>– Client Name</strong>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/yourhandle">@yourhandle</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Instagram</a> |
+      <a href="#">LinkedIn</a> |
+      <a href="#">Behance</a>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
