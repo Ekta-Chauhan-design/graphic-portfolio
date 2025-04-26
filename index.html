@@ -1,260 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekta Chauhan Portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        /* Reset and basic styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ekta Chauhan - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body { margin: 0; font-family: 'Roboto', sans-serif; }
+    header { background: #ffffff; text-align: center; padding: 20px; }
+    header img { max-width: 150px; }
+    header h1 { margin: 10px 0 5px; font-size: 28px; }
+    header p { font-size: 14px; letter-spacing: 2px; }
+    nav { margin-top: 15px; }
+    nav a { margin: 0 15px; text-decoration: none; color: black; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: #fff;
-            color: #111;
-        }
+    .social-icons { margin-top: 10px; }
+    .social-icons a { margin: 0 8px; color: black; font-size: 20px; }
 
-        header {
-            background: #ffffff;
-            padding: 20px 40px;
-            text-align: center;
-            border-bottom: 2px solid #eee;
-        }
+    section { padding: 40px; text-align: center; }
+    .portfolio-section { margin-bottom: 50px; }
+    section img { max-width: 300px; margin: 10px; border-radius: 8px; }
 
-        header img {
-            max-width: 100px;
-            margin-bottom: 10px;
-        }
-
-        header h1 {
-            font-family: 'Pacifico', cursive;
-            font-size: 32px;
-            margin: 10px 0 5px 0;
-        }
-
-        header p {
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #555;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            color: #111;
-            font-size: 20px;
-            transition: 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #ffcc00;
-        }
-
-        nav {
-            margin-top: 20px;
-        }
-
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #111;
-            font-size: 16px;
-            position: relative;
-        }
-
-        nav a:hover::after {
-            content: '';
-            display: block;
-            margin: auto;
-            height: 3px;
-            width: 100%;
-            background: #ffcc00;
-        }
-
-        section {
-            padding: 60px 40px;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            font-family: 'Pacifico', cursive;
-        }
-
-        .portfolio-category {
-            margin: 40px 0;
-        }
-
-        .portfolio-category h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            color: #003366;
-        }
-
-        .portfolio-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .portfolio-gallery img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border: 2px solid #003366;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .portfolio-gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        footer {
-            background: #003366;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        footer h2 {
-            margin-bottom: 20px;
-            font-family: 'Pacifico', cursive;
-        }
-
-        form {
-            max-width: 600px;
-            margin: auto;
-        }
-
-        input, textarea {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        button {
-            background: #ffcc00;
-            color: #111;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #ff9900;
-        }
-    </style>
+    footer { background: #003366; color: white; padding: 40px 20px; text-align: center; }
+    footer form { max-width: 600px; margin: 20px auto 0; }
+    footer input, footer textarea { width: 100%; padding: 10px; margin: 8px 0; border: none; border-radius: 5px; }
+    footer button { background: white; color: #003366; padding: 10px 20px; font-weight: bold; border: none; cursor: pointer; }
+    footer button:hover { background: #ffcc00; color: black; }
+  </style>
 </head>
-
 <body>
 
-    <header>
-        <img src="your-logo.png" alt="Ekta Chauhan Logo">
-        <h1>Ekta Chauhan</h1>
-        <p>Graphic Designer</p>
-        <div class="social-icons">
-            <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://behance.net/" target="_blank"><i class="fab fa-behance"></i></a>
-        </div>
-        <nav>
-            <a href="index.html">Portfolio</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<header>
+  <img src="images/logo.png" alt="Ekta Chauhan Logo">
+  <h1>Ekta Chauhan</h1>
+  <p>Graphic Designer</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-behance"></i></a>
+  </div>
+  <nav>
+    <a href="index.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
+<section>
+  <h2>Logo Designs</h2>
+  <div class="portfolio-section">
+    <img src="images/logo1.jpg" alt="Logo 1">
+    <img src="images/logo2.jpg" alt="Logo 2">
+  </div>
 
-        <div class="portfolio-category">
-            <h3>Logo Designs</h3>
-            <div class="portfolio-gallery">
-                <img src="logo1.jpg" alt="Logo Design 1">
-                <img src="logo2.jpg" alt="Logo Design 2">
-                <img src="logo3.jpg" alt="Logo Design 3">
-            </div>
-        </div>
+  <h2>Stationery Designs</h2>
+  <div class="portfolio-section">
+    <img src="images/stationery1.jpg" alt="Stationery 1">
+  </div>
 
-        <div class="portfolio-category">
-            <h3>Stationery Designs</h3>
-            <div class="portfolio-gallery">
-                <img src="stationery1.jpg" alt="Stationery 1">
-                <img src="stationery2.jpg" alt="Stationery 2">
-            </div>
-        </div>
+  <h2>Brand Identity Projects</h2>
+  <div class="portfolio-section">
+    <img src="images/brand1.jpg" alt="Brand Identity 1">
+  </div>
+</section>
 
-        <div class="portfolio-category">
-            <h3>Brand Identity Projects</h3>
-            <div class="portfolio-gallery">
-                <img src="brand1.jpg" alt="Brand Identity 1">
-                <img src="brand2.jpg" alt="Brand Identity 2">
-            </div>
-        </div>
-
-        <div class="portfolio-category">
-            <h3>Flyer/Poster Designs</h3>
-            <div class="portfolio-gallery">
-                <img src="flyer1.jpg" alt="Flyer 1">
-                <img src="poster1.jpg" alt="Poster 1">
-            </div>
-        </div>
-
-        <div class="portfolio-category">
-            <h3>Brochure Designs</h3>
-            <div class="portfolio-gallery">
-                <img src="brochure1.jpg" alt="Brochure 1">
-                <img src="brochure2.jpg" alt="Brochure 2">
-            </div>
-        </div>
-
-        <div class="portfolio-category">
-            <h3>Banner Designs</h3>
-            <div class="portfolio-gallery">
-                <img src="banner1.jpg" alt="Banner 1">
-                <img src="banner2.jpg" alt="Banner 2">
-            </div>
-        </div>
-
-        <div class="portfolio-category">
-            <h3>Social Media Posters</h3>
-            <div class="portfolio-gallery">
-                <img src="social1.jpg" alt="Social Media 1">
-                <img src="social2.jpg" alt="Social Media 2">
-            </div>
-        </div>
-
-    </section>
-
-    <footer id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" name="first-name" placeholder="First Name" required>
-            <input type="text" name="last-name" placeholder="Last Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="phone" placeholder="Phone" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <p style="margin-top:20px;">© 2025 Ekta Chauhan</p>
-    </footer>
+<footer>
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <p style="margin-top:20px;">© 2025 Ekta Chauhan</p>
+</footer>
 
 </body>
 </html>
